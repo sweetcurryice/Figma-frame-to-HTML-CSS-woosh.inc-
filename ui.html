@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Figma Plugin UI</title>
+  </head>
+  <body>
+    <h1>Figma Plugin</h1>
+    <p>Select a Frame to export as HTML/CSS:</p>
+    <button id="generate">Generate HTML/CSS</button>
+    <div id="error-message"></div>
+
+    <script>
+      document.getElementById('generate').onclick = (event)=>{
+      parent.postMessage({pluginMessage: {type :'actionGenerate'}}, '*')
+      };
+    </script>
+  </body>
+</html>
