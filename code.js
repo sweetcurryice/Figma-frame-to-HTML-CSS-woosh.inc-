@@ -202,7 +202,7 @@ const css = `
       
     }
 
-    else if(layer.type == "VECTOR"){
+    else if(layer.type == "LINE"){
       //console.log(layer)
       bOpacity = layer.strokes[0].opacity
       bColor = layer.strokes[0].color
